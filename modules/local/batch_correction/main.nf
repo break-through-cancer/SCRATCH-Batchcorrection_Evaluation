@@ -4,7 +4,7 @@ process BATCHCORRECTION {
     label 'process_medium'
     container 'syedsazaidi/scratch-batchcor:V1'
 
-    publishDir "SCRATCH-BatchCorrection_output",
+    publishDir "${params.outdir}",
             mode: 'copy',
             overwrite: true
 
