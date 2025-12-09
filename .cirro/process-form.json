@@ -1,0 +1,43 @@
+{
+    "ui": {},
+    "form": {
+        "title": "SCRATCH QC",
+        "type": "object",
+        "properties": {
+            "input_seurat_object": {
+                "type": "string",
+                "title": "input_seurat_object",
+                "description": "Input seurat object",
+                "pathType": "dataset",
+                "file": "**/*.RDS"
+            },
+            "project_name": {
+                "type": "string",
+                "title": "project_name",
+                "default": "project"
+            },
+            "input_integration_method": {
+                "type": "string",
+                "title": "input_integration_methodject_name",
+                "enum": [
+                    "all",
+                    "harmony",
+                    "rpca",
+                    "cca",
+                    "mnn"
+                ],
+                "default": "all"
+            },
+            "input_target_variables": {
+                "type": "string",
+                "title": "input_target_variables",
+                "default": "batch"
+            },
+            "n_threads": {
+                "type": "integer",
+                "title": "n_threads",
+                "default": 20
+            }
+        }
+    }
+}

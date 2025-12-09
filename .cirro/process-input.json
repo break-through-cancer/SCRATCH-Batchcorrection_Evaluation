@@ -1,0 +1,8 @@
+{
+  "input_seurat_object": "$.params.dataset.paramJson.input_seurat_object",
+  "outdir": "$.params.dataset.s3|/data/",
+  "project_name": "$.params.dataset.paramJson.project_name",
+  "input_integration_method": "$.params.dataset.paramJson.input_integration_method",
+  "input_target_variables": "$.params.dataset.paramJson.input_target_variables",
+  "n_threads": "$.params.dataset.paramJson.n_threads"
+}
